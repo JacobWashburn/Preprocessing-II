@@ -169,19 +169,29 @@ img {
   margin: 0 auto;
 }
 .Navigation {
-  margin: 3% 0;
-  display: flex;
-  justify-content: space-between;
-  align-content: space-between;
+  margin-top: 3%;
+  border-bottom: 2px dashed #C0C0C0;
 }
-.Navigation .NavLinks {
+.Navigation .NavWrapper {
   display: flex;
   justify-content: space-between;
-  align-content: space-between;
+  align-content: center;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+.Navigation .NavWrapper .PageName {
+  width: 30%;
+}
+.Navigation .NavWrapper .NavLinks {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
   align-items: center;
   width: 40%;
+  padding-right: 2%;
 }
-.Navigation .NavLinks a {
+.Navigation .NavWrapper .NavLinks a {
   text-decoration: none;
   font-size: 1.5rem;
   color: black;
@@ -197,11 +207,26 @@ img {
   font-size: 1.6rem;
   padding: 20px;
 }
+.home header {
+  width: 100%;
+  border-top: 2px dashed #C0C0C0;
+}
+.home header .HeaderWrapper {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  border: 1px solid red;
+}
+.home header img {
+  margin-bottom: 3%;
+}
 .home .content-section {
   margin: 30px 0;
+  padding-top: 30px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  border-top: 2px dashed #C0C0C0;
 }
 .home .content-section .text-content {
   width: 48%;
@@ -242,4 +267,16 @@ img {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .destination .btn {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  border-radius: 8px;
+  color: white;
+  font-size: 1.7rem;
+  width: 82%;
+  height: 15%;
+  background: #17A2B8;
 }

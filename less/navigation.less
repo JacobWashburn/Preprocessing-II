@@ -1,19 +1,31 @@
 // Navigation Styles here
 .Navigation {
-   margin: 3% 0;
-   .Flex(space-between, center);
-   
-   
-   .NavLinks {
+   margin-top: 3%;
+   border-bottom: 2px dashed @navigation-border;
+   .NavWrapper {
       .Flex(space-between, center);
-      align-items: center;
-      width: 40%;
+      max-width: 800px;
+      width:100%;
+      margin: 0 auto;
+      .PageName {
+         width:30%;
+         }
+       .NavLinks {
+         .Flex(space-between, center);
+         align-items: center;
+         width: 40%;
+         padding-right: 2%;
+         
 
-      a {
-         text-decoration: none;
-         font-size: 1.5rem;
-         color: black;
+         a {
+            text-decoration: none;
+            font-size: 1.5rem;
+            color: black;
+         }
       }
    }
 
-}
+   
+     
+   }
+

@@ -1,6 +1,17 @@
 // Mixins in here
-.Flex(@justify, @align){
+.Flex(@justify, @align) {
    display: flex;
    justify-content: @justify;
-   align-content: @justify;
+   align-content: @align;
+}
+
+.CustomBtn() {
+   .Flex(center, center);
+   align-items: center;
+   border-radius: 8px;
+   color: white;
+   font-size: 1.7rem;
+   width: 82%;
+   height: 15%;
+   background: @button-bg;
 }
