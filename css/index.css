@@ -168,6 +168,24 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+.Navigation {
+  margin: 3% 0;
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+}
+.Navigation .NavLinks {
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+  align-items: center;
+  width: 40%;
+}
+.Navigation .NavLinks a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: black;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
