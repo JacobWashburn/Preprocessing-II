@@ -5,31 +5,30 @@
    .NavWrapper {
       .Flex(space-between, center);
       max-width: 800px;
-      width:100%;
+      width: 100%;
       margin: 0 auto;
       @media @mobile {
-      .Flex(center,center);
-      flex-direction: column;
-   }
+         .Flex(center, center);
+         flex-direction: column;
+      }
       .PageName {
-         width:30%;
+         width: 30%;
          @media @mobile {
             width: 100%;
-            .Flex(center,center);
+            .Flex(center, center);
             margin: 3% 0;
          }
-         }
-       .NavLinks {
+      }
+      .NavLinks {
          .Flex(space-between, center);
          align-items: center;
          width: 40%;
          padding-right: 2%;
          @media @mobile {
-            width:100%;
+            width: 100%;
             .Flex(space-evenly, center);
             margin: 1% 0;
          }
-         
 
          a {
             text-decoration: none;
@@ -38,8 +37,4 @@
          }
       }
    }
-
-   
-     
-   }
-
+}
