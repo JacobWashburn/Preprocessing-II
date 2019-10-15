@@ -1,1 +1,394 @@
-/* LESS needs to be processed */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Roboto', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Indie Flower', cursive;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3.2rem;
+  padding-bottom: 10px;
+}
+h4 {
+  font-size: 2.5rem;
+  padding-bottom: 10px;
+}
+p {
+  line-height: 1.5;
+  font-size: 1.6rem;
+  padding-bottom: 10px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+.Navigation {
+  border-bottom: 2px dashed #C0C0C0;
+}
+.Navigation .NavWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  max-width: 800px;
+  width: 100%;
+  margin: 2% auto;
+}
+@media (max-width: 500px) {
+  .Navigation .NavWrapper {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+  }
+}
+.Navigation .NavWrapper .PageName {
+  width: 30%;
+}
+@media (max-width: 500px) {
+  .Navigation .NavWrapper .PageName {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 3% 0;
+  }
+}
+.Navigation .NavWrapper .NavLinks {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  width: 40%;
+  padding-right: 3%;
+}
+@media (max-width: 500px) {
+  .Navigation .NavWrapper .NavLinks {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    margin: 1% 0;
+  }
+}
+.Navigation .NavWrapper .NavLinks a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: black;
+}
+.footer {
+  width: 100%;
+  border-top: 2px dashed silver;
+  background: #FFEBCD;
+}
+.footer p {
+  text-align: center;
+  color: #212529;
+  font-size: 1.6rem;
+  padding: 20px;
+}
+@media (max-width: 500px) {
+  .home {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+.home header {
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .home header {
+    border-bottom: 2px dashed #C0C0C0;
+    padding-bottom: 2%;
+  }
+}
+.home .HeaderWrapper {
+  max-width: 800px;
+  width: 100%;
+}
+.home img {
+  margin-bottom: 3%;
+}
+.content-section {
+  margin: 30px 0;
+  padding-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-top: 2px dashed #C0C0C0;
+  /* @media end */
+}
+@media (max-width: 500px) {
+  .content-section {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    width: 100%;
+    border: none;
+  }
+}
+.content-section .text-content {
+  width: 48%;
+  padding-right: 1%;
+}
+@media (max-width: 500px) {
+  .content-section .text-content {
+    width: 100%;
+  }
+}
+.content-section .img-content {
+  width: 48%;
+  padding-left: 1%;
+}
+@media (max-width: 500px) {
+  .content-section .img-content {
+    width: 100%;
+  }
+}
+.content-section .img-content img {
+  border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .content-section .img-content img {
+    width: 100%;
+  }
+}
+.inverse-content {
+  padding-bottom: 30px;
+  border-bottom: 2px dashed #C0C0C0;
+}
+@media (max-width: 500px) {
+  .inverse-content {
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+.inverse-content .text-content {
+  padding-left: 1%;
+  padding-right: 0;
+}
+@media (max-width: 500px) {
+  .inverse-content .text-content {
+    width: 100%;
+  }
+}
+.inverse-content .img-content {
+  padding-right: 1%;
+  padding-left: 0;
+}
+@media (max-width: 500px) {
+  .inverse-content .img-content {
+    width: 100%;
+  }
+}
+.content-destination {
+  width: 75%;
+  margin: 0 auto;
+}
+@media (max-width: 500px) {
+  .content-destination {
+    width: 100%;
+    margin: 3% 0;
+  }
+}
+.content-destination img {
+  border-radius: 10px;
+}
+.content-pick {
+  padding-top: 30px;
+  border-top: 2px dashed #C0C0C0;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .content-pick {
+    flex-direction: column;
+  }
+}
+.content-pick .destination {
+  width: 30%;
+  margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .content-pick .destination {
+    width: 80%;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+}
+.content-pick .destination .btn {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  border-radius: 15px;
+  color: white;
+  font-size: 1.7rem;
+  width: 85%;
+  height: 15%;
+  background: #17A2B8;
+  margin-bottom: 8%;
+}
+@media (max-width: 500px) {
+  .content-pick .destination .btn {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    border-radius: 15px;
+    color: white;
+    font-size: 1.7rem;
+    width: 100%;
+    height: 45px;
+    background: #17A2B8;
+  }
+}
